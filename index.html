@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type = "text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type = "text/css" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Handlee|Kalam|Orbitron" rel="stylesheet">
+    <title>Crystal Collector Game</title>
+</head>
+<body>
+
+    <!-- <div class = "container">
+
+        <div class = "row">
+
+        <h1>CRYSTAL COLLECTOR GAME!</h1>
+
+        </div>
+    
+
+        <div class = "row">
+
+            <div class = "col-md-6 directions">
+
+                <h2>How To Play:</h2><br>
+
+                <ul>
+
+                    <li>You will be given a random number at the start of the game.</li><br>
+
+                    <li>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score. </li><br>
+
+                    <li>You win the game by matching your total score to random number, you lose the game if yuor total score goes above the random number.</li><br>
+
+                    <li>The value of each crystal is hidden from you until you click on it.</li><br>
+
+                    <li>Each time when the game starts, the game will change the value of each crystal</li><br>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class = "row">
+            
+            <div class = "col-md-3 randomNum">0</div>
+
+            <div class = "col-md-2 wins_loss">
+
+                <div class = "row winNum">Wins:</div> <br>
+
+                <div class = "row lossNum">Losses:</div>
+
+            </div> 
+
+        </div>
+
+        <div class = "row images">
+
+            <div class = "col-md-3 blueGem">
+                <img src="assets/images/Blue_gem.jpg" style = "height: 100px; width: 100px" alt="Blue Gem">
+            </div>
+            <div class = "col-md-3 greenGem">
+                <img src="assets/images/Green_gem.jpg" style = "height: 100px; width: 100px" alt="Green Gem">
+            </div>
+            <div class = "col-md-3 purpleGem">
+                <img src="assets/images/Purple_gem.jpg" style = "height: 100px; width: 100px" alt="Purple Gem">
+            </div>
+            <div class = "col-md-3 redGem">
+                <img src="assets/images/Red_gem.jpg" style = "height: 100px; width: 100px" alt="Red Gem">
+            </div>
+
+        </div>
+
+        <div class = "row scoreTag">
+
+            <p>Your total score is:</p>
+
+        </div>
+
+        <div class = "row score">
+
+            <p> 0 </p>
+
+        </div>
+
+</div> -->
+
+
+<!-- ********************************* ROUND TWO ******************************* -->
+
+<div class = "container header">
+
+    <h1>CRYSTAL COLLECTOR GAME</h1>
+
+</div>
+
+<div class = "container rules">
+
+    <h2>How to play:</h2>
+
+    <br>
+
+    <p>You will be given a random number at the start of the game.</p>
+
+    <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score. </p>
+
+    <p>You win the game by matching your total score to random number, you lose the game if yuor total score goes above the random number.</p>
+
+    <p>The value of each crystal is hidden from you until you click on it.</p>
+
+    <p>Each time when the game starts, the game will change the value of each crystal</p>
+
+</div>
+
+<div class = "container">
+
+    <div class = "row">
+
+        <div class = "col-md-4 randomNum">Random Number: 
+            <p id = randomNumText></p>
+        </div>
+
+        <div class = "col-md-4"></div>
+
+        <div class = "col-md-4 score">Your Score: 
+            <p id = scoreText></p>
+        </div>
+
+    </div>
+
+</div>
+
+<div class = "container">
+
+    <div class = "row gemsImg">
+
+        <div class = "col-md-3 gemBlue">
+            <img src="assets/images/Blue_gem.jpg" style = "height: 100px; width: 100px" alt="Blue Gem">
+        </div>
+
+        <div class = "col-md-3 gemGreen">
+            <img src="assets/images/Green_gem.jpg" style = "height: 100px; width: 100px" alt="Green Gem">
+        </div>
+
+        <div class = "col-md-3 gemPurple">
+            <img src="assets/images/Purple_gem.jpg" style = "height: 100px; width: 100px" alt="Purple Gem">
+        </div>
+
+        <div class = "col-md-3 gemRed">
+            <img src="assets/images/Red_gem.jpg" style = "height: 100px; width: 100px" alt="Red Gem">
+        </div>
+
+    </div>
+
+</div>
+
+<div class = "container">
+
+    <div class = "row">
+
+        <div class = "col-md-4 wins">Wins:
+
+            <p id = winsText>0</p>
+
+        </div>
+
+        <div class = "col-md-4 message">Message:
+
+            <p id = "messageText"></p>
+
+        </div>
+
+        <div class = "col-md-4 losses">Losses:
+
+            <p id = "lossesText">0</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type = "text/javascript" src = "assets/javascript/game.js"></script>
+</body>
+</html>
